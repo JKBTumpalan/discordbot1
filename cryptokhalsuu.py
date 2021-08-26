@@ -1,5 +1,4 @@
 import discord
-import os
 from decouple import config
 import requests
 import json
@@ -40,5 +39,4 @@ async def on_message(message):
 
         await message.channel.send('PHP ' + get_crypto_price(message_blocks[1]))
 
-print(BOT_TOKEN)                       
 client.run(BOT_TOKEN)
